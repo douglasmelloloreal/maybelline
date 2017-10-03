@@ -1,0 +1,342 @@
+html,
+body{
+	margin: 0;
+	font-family: 'Gotham', sans-serif;
+}
+ul, ol{
+	padding-left: 0;
+	margin: 0;
+}
+img{
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+a{
+	text-decoration: none;
+}
+a:hover, a:focus{
+	transition: 500ms;
+}
+@font-face {
+	font-family: 'Gotham';
+	src: url('https://raw.githubusercontent.com/douglasmelloloreal/maybelline/master/fonts/GothamBold.eot');
+	src: url('https://raw.githubusercontent.com/douglasmelloloreal/maybelline/master/fonts/GothamBold.eot?#iefix') format('embedded-opentype'),
+		url('https://raw.githubusercontent.com/douglasmelloloreal/maybelline/master/fonts/GothamBold.woff') format('woff'),
+		url('https://raw.githubusercontent.com/douglasmelloloreal/maybelline/master/fonts/GothamBold.ttf') format('truetype'),
+		url('https://raw.githubusercontent.com/douglasmelloloreal/maybelline/master/fonts/GothamBold.svg#GothamBold') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gotham';
+	src: url('https://raw.githubusercontent.com/douglasmelloloreal/maybelline/master/fonts/Gotham-Book.eot');
+	src: url('https://raw.githubusercontent.com/douglasmelloloreal/maybelline/master/fonts/Gotham-Book.eot?#iefix') format('embedded-opentype'),
+		url('https://raw.githubusercontent.com/douglasmelloloreal/maybelline/master/fonts/Gotham-Book.woff') format('woff'),
+		url('https://raw.githubusercontent.com/douglasmelloloreal/maybelline/master/fonts/Gotham-Book.ttf') format('truetype'),
+		url('https://raw.githubusercontent.com/douglasmelloloreal/maybelline/master/fonts/Gotham-Book.svg#Gotham-Book') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gotham';
+	src: url('https://raw.githubusercontent.com/douglasmelloloreal/maybelline/master/fonts/Gotham-Medium.eot');
+	src: url('https://raw.githubusercontent.com/douglasmelloloreal/maybelline/master/fonts/Gotham-Medium.eot?#iefix') format('embedded-opentype'),
+		url('https://raw.githubusercontent.com/douglasmelloloreal/maybelline/master/fonts/Gotham-Medium.woff') format('woff'),
+		url('https://raw.githubusercontent.com/douglasmelloloreal/maybelline/master/fonts/Gotham-Medium.ttf') format('truetype'),
+		url('https://raw.githubusercontent.com/douglasmelloloreal/maybelline/master/fonts/Gotham-Medium.svg#Gotham-Medium') format('svg');
+	font-weight: 500;
+	font-style: normal;
+}
+.header{
+	float: left;
+}
+.main-content{
+	width: 800px;
+	max-width: 100%;
+	margin: 0 auto;
+	border: 1px solid #e4e4e4;
+}
+/* header */
+.menu{
+	width: 100%;
+	border-bottom: 3px solid #520001;
+	float: left;
+}
+.menu li{
+	width: 16.66%;
+	display: inline-block;
+	float: left;
+}
+.menu li a{
+	width: 100%;
+	background-color: #ed0477;
+	color: #FFFFFF;
+	display: block;
+	float: left;
+	border-left: 1px solid #d10469;
+}
+.menu li a:hover{
+	background-color: #520002;
+}
+.menu li a img{
+	margin: 15px auto 10px;
+}
+.menu li a p{
+	font-family: 'Arial', sans-serif;
+	font-size: 8px;
+	letter-spacing: 1.4px;
+	text-align: center;
+	margin: 5px 0 15px;
+	text-transform: uppercase;
+}
+.content-product{
+	float: left;
+	margin: 20px 0;
+	padding: 0 40px;
+}
+.content-product .img-product{
+	width: 400px;
+	max-width: 100%;
+	border: 1px solid #e4e4e4;
+	float: left;
+	margin: 30px 0;
+}
+.content-product .text-product{
+	max-width: 298px;
+	margin: 30px 0;
+	padding: 0 0 0 20px;
+	float: left;
+}
+.content-product .text-product .title{
+	font-size: 24px;
+	line-height: 24px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #0a0a0a;
+	margin: 0 0 4px;
+}
+.content-product .text-product .subtitle{
+	font-size: 12px;
+	font-weight: 500;
+	text-transform: uppercase;
+	color: #0a0a0a;
+	margin: 0;
+}
+.content-product .text-product p{
+	font-size: 11px;
+	line-height: 16px;
+	font-weight: 500;
+	color: #0a0a0a;
+	margin: 10px 0;
+}
+.content-product .text-product ol{
+	padding-left: 15px;
+}
+.content-product .text-product ol li{
+	font-size: 11px;
+	line-height: 16px;
+	font-weight: 500;
+	color: #0a0a0a;
+}
+.content-maquiagem{
+	width: 100%;
+	float: left;
+	margin: 20px 0 0;
+	background-color: #000000;
+	position: relative;
+	padding-bottom: 63px;
+}
+.content-maquiagem::after{
+	content: "";
+	display: block;
+	position: absolute;
+	z-index: 9;
+	bottom: 0;
+	width: 800px;
+	max-width: 100%;
+	height: 103px;
+	background: url('https://raw.githubusercontent.com/douglasmelloloreal/maybelline/master/img/bg-rosa.png') no-repeat center;
+}
+.content-maquiagem .title{
+	font-size: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	text-align: center;
+	margin: 55px 0;
+}
+.content-maquiagem .container{
+	width: 100%;
+	float: left;
+}
+.content-maquiagem .container .col-img{
+	width: 33%;
+	float: left;
+	margin: 15px 0;
+	position: relative;
+	z-index: 99;
+}
+.content-maquiagem .container .col-img img{
+	margin: 0 auto;
+	-ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    transition: 500ms;
+}
+.content-maquiagem .container .col-img a img:hover{
+	-ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.content-comprar{
+	width: 100%;
+	float: left;
+	background-color: #ed0477;
+	position: relative;
+	padding-bottom: 63px;
+}
+.content-comprar .title{
+	font-size: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #000000;
+	text-align: center;
+	margin: 55px 0;
+}
+.content-comprar .container{
+	width: 690px;
+	max-width: 100%;
+	margin: 0 auto;
+}
+.content-comprar .col{
+	width: 25%;
+	max-width: 100%;
+	float: left;
+}
+.content-comprar .col img{
+	margin: 10px auto 0;
+}
+.content-comprar .col .title2{
+	font-size: 13px;
+	color: #000000;
+	font-weight: 700;
+	margin: 10px 0;
+	text-transform: uppercase;
+	text-align: center;
+}
+.content-comprar .col .text{
+	width: 145px;
+	margin: 0 auto;
+	font-size: 10px;
+	font-weight: 500;
+	text-align: center;
+	padding: 0 10px;
+}
+.content-marca{
+	width: 100%;
+	float: left;
+	position: relative;
+	background-color: #FFFFFF;
+	/*border-bottom: 1px solid #e4e4e4;*/
+}
+.content-marca::before{
+	content: "";
+	display: block;
+	position: absolute;
+	z-index: 9;
+	top: 0;
+	width: 800px;
+	max-width: 100%;
+	height: 37px;
+	background: url('https://raw.githubusercontent.com/douglasmelloloreal/maybelline/master/img/bg-rosa2.png') no-repeat center;
+}
+.content-marca .img-marca{
+	width: 400px;
+	max-width: 100%;
+	float: left;
+}
+.content-marca .content-text{
+	width: 340px;
+	max-width: 100%;
+	float: left;
+	padding: 0 20px 0 40px;
+}
+.content-marca .content-text .title{
+	font-size: 19px;
+	font-weight: 700;
+	color: #1d1d1d;
+	text-transform: uppercase;
+	margin: 100px 0 30px;
+}
+.content-marca .content-text .text{
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 18px;
+	color: #1d1d1d;
+	margin: 0 0 10px;
+}
+.content-pagamento{
+	width: 100%;
+	float: left;
+}
+.content-pagamento .title{
+	font-size: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #000000;
+	text-align: center;
+	margin: 55px 0;
+	position: relative;
+}
+.content-pagamento .title::after{
+	content: '';
+	display: inline-block;
+	width: 78px;
+	height: 95px;
+	margin-left: 5px;
+	vertical-align: middle;
+	background: url('https://raw.githubusercontent.com/douglasmelloloreal/maybelline/master/img/icon-selo.png');
+}
+.content-pagamento img{
+	margin: 5px auto 50px;
+}
+@media (max-width: 767px){
+	.menu li{
+		width: 50%;
+	}
+	.content-maquiagem .container .col-img{
+		width: 100%;
+	}
+	.content-product .img-product{
+		width: 100%;
+	}
+	.content-product .img-product img{
+		margin: 0 auto;
+	}
+	.content-product .text-product{
+		max-width: 100%;
+	}
+	.content-comprar .col{
+		width: 50%;
+	}
+	.content-marca .img-marca{
+		width: 100%;
+	}
+	.content-marca .img-marca img{
+		margin: 0 auto;
+	}
+	.content-marca .content-text{
+		width: 100%;
+		text-align: center;
+		padding: 0;
+	}
+	.content-marca .content-text .title{
+		margin: 40px 0;
+	}
+	.content-marca .content-text .text{
+		padding: 0 30px;
+	}
+}
